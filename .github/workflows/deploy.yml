@@ -31,4 +31,4 @@ jobs:
 
 
       - name: 'Upload to S3 Bucket'
-        run: aws s3 cp gh-archive-data-processing.py s3://${{ secrets.AWS_S3_BUCKET_NAME }}/${{ secrets.AWS_S3_BUCKET_KEY }}
+        run: aws s3 cp jobs/gh_archive_curate_data.py s3://${{ secrets.AWS_S3_BUCKET_NAME }}/${{ secrets.AWS_S3_BUCKET_KEY }}
